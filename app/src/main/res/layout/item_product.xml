@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_margin"
+    app:cardCornerRadius="@dimen/radius"
+    app:cardElevation="@dimen/small_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:contentDescription="Product Image"
+            android:padding="@dimen/small_padding"
+            android:src="@color/purple_700" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/product_title"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            tools:text="@string/product_title" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/product_rating"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:textSize="@dimen/text_size_1"
+            tools:text="@string/review_count" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/product_price"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_rating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:textSize="@dimen/text_size_1"
+            tools:text="Price: $9.40" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_product_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_price"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:text="@string/add_to_cart"
+            android:textSize="@dimen/text_size_1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_product_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_product_buy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:text="@string/add_to_favorite"
+            android:textSize="@dimen/text_size_1" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius">20dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="small_elevation">4dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="medium_margin">8dp</dimen>
+    <dimen name="text_size_1">14sp</dimen>
+    <dimen name="height">250dp</dimen>
+    <dimen name="text_large">20sp</dimen>
+</resources>
